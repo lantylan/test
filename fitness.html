@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<title>健身会馆-自助终端</title>
+	<link rel="stylesheet" type="text/css" href="../static/src/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../static/src/css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="../static/src/css/fitness.css" />
+</head>
+<body>
+<div id="page" class="page fitness">
+	<div class="topbar">
+		<div class="tb-content">
+			<div class="tb-l">
+				<span id="timeBox" class="time-box"></span>
+				<span>欢迎进入健身会馆</span>
+			</div>
+			<div class="tb-r">
+				<a class="cur" href="#">中</a>
+				<a href="#">En</a>
+			</div>
+		</div>
+		<div class="tb-bg"></div>
+	</div>
+	<div class="slider">
+		<div id="slider" class="slider-box">
+			<div class="item">
+				<a href="#"><img src="../static/src/temp/slider1.jpg" alt="" /></a>
+			</div>
+			<div class="item hide">
+				<a href="#"><img src="../static/src/temp/slider2.jpg" alt="" /></a>
+			</div>
+			<div class="item hide">
+				<a href="#"><img src="../static/src/temp/slider1.jpg" alt="" /></a>
+			</div>
+			<div class="item hide">
+				<a href="#"><img src="../static/src/temp/slider2.jpg" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<div id="loginForm" class="login-form">
+		<div class="lf-bg"></div>
+		<div class="lf-box">
+			<p><span class="ico ico-warn"></span><span id="loginInfo">亲，只有一卡通用户，才能预定哦，请先登录</span></p>
+			<div class="form-row">
+				<div class="para">卡号</div>
+				<div class="element">
+					<input id="cardNum" class="form-text" type="text" readonly="readonly" />
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="para">密码</div>
+				<div class="element">
+					<input id="cardPwd" class="form-text" type="password" readonly="readonly" />
+				</div>
+			</div>
+			<div class="form-card">
+				<span>请将一卡通置于读卡区</span>
+			</div>
+			<div id="KeyBoard" class="ui-keyboard hide">
+				<a data-value=1 class="num" href="javascript:;">1</a>
+				<a data-value=2 class="num" href="javascript:;">2</a>
+				<a data-value=3 class="num" href="javascript:;">3</a>
+				<a class="del" href="javascript:;"></a>
+				<a data-value=4 class="num" href="javascript:;">4</a>
+				<a data-value=5 class="num" href="javascript:;">5</a>
+				<a data-value=6 class="num" href="javascript:;">6</a>
+				<a data-value=0 class="num" href="javascript:;">0</a>
+				<a data-value=7 class="num" href="javascript:;">7</a>
+				<a data-value=8 class="num" href="javascript:;">8</a>
+				<a data-value=9 class="num" href="javascript:;">9</a>
+				<a class="sure" href="javascript:;">确认</a>
+			</div>
+		</div>
+	</div>
+	<div class="footbar">
+		<a href="fitness.html"><span class="ico ico-home"></span></a>
+		<em></em>
+		<a href="more.html"><span class="ico ico-more"></span></a>
+	</div>
+</div>
+<object id="MYAvtiveX" class="activex" classid="clsid:BE09B27D-6B4A-456C-9DB7-98495655EFED"></object> 
+<script src="../static/src/js/lib/jquery.min.js"></script>
+<script src="../static/src/js/lib/carousel.min.js"></script>
+<script src="../static/src/js/public/base.js"></script>
+<script src="../static/src/js/public/app.js"></script>
+<script src="../static/src/js/fitness/fitness.js"></script>
+<script>
+	$(function(){
+		AISports.Fitness.Index.init();
+	});
+</script>
+</body>
+</html>
